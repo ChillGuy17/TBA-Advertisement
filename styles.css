@@ -1,0 +1,60 @@
+/* Typography */
+.header, #reasons {
+  font-size: 3rem;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.YOU {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Images */
+.image-h2, .community, .code, .dragon {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+#reason1, #reason2, #reason3 {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 auto 2rem auto;
+  max-width: 700px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* Button styling */
+button {
+  margin: 20px auto;
+  display: block;
+}
+
+.butt3 {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .header, #reasons {
+    font-size: 4rem;
+  }
+
+  .YOU {
+    font-size: 2rem;
+  }
+
+  #reason1, #reason2, #reason3 {
+    font-size: 1.1rem;
+  }
+
+  .butt3 {
+    font-size: 1.3rem;
+    padding: 15px 35px;
+  }
+}
