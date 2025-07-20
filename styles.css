@@ -59,8 +59,6 @@ button {
   }
 }
 
-/* 👇 New styles added below 👇 */
-
 /* Separator line between sections */
 hr {
   border: none;
@@ -75,4 +73,20 @@ hr {
   margin-top: 60px;
 }
 
-/* Margin utility overrides (Bootstrap)
+/* Optional Bootstrap-style spacing overrides (just in case) */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
