@@ -59,3 +59,20 @@ button {
   }
 }
 
+/* 👇 New styles added below 👇 */
+
+/* Separator line between sections */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 60px auto;
+  max-width: 90%;
+}
+
+/* Spacing for merged layout */
+#reasons-section {
+  margin-top: 60px;
+}
+
+/* Margin utility overrides (Bootstrap)
