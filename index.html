@@ -1,49 +1,72 @@
-<!-- Hero Section -->
-<div class="container text-center">
-  <h1 class="header">TBA Discord Server</h1>
-  <h2 class="YOU">We want YOU to join us!</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>TBA Discord Advertisement</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Intro Section -->
+  <div class="container text-center">
+    <h1 class="header">TBA Discord Server</h1>
+    <h2 class="YOU">We want YOU to join us!</h2>
 
-  <div class="row justify-content-center align-items-center my-4">
-    <div class="col-12 col-md-6 mb-3">
-      <img class="image-h2" src="./assets/images/pointing.jpg" alt="Pointing image" />
-    </div>
-    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-      <button id="join-discord" class="btn btn-primary btn-lg mb-3">
-        Join Us Now
-      </button>
-      <a href="#reasons" class="btn btn-primary btn-lg">
-        Why join? Here's Why?
-      </a>
+    <div class="row justify-content-center align-items-center my-4">
+      <div class="col-12 col-md-6 mb-3">
+        <img class="image-h2" src="./assets/images/pointing.jpg" alt="Pointing image" />
+      </div>
+      <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+        <button id="join-discord" class="btn btn-primary btn-lg mb-3">
+          Join Us Now
+        </button>
+        <a href="#reasons-section" class="btn btn-primary btn-lg">
+          Why join? Here's Why?
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Separator -->
-<hr class="my-5" />
+  <!-- Divider -->
+  <hr class="my-5" />
 
-<!-- Reasons Section -->
-<div class="container text-center mt-5" id="reasons-section">
-  <h1 id="reasons">Why should you join us?</h1>
+  <!-- Reasons Section -->
+  <div class="container text-center mt-5" id="reasons-section">
+    <h1 id="reasons">Why should you join us?</h1>
 
-  <p id="reason1" class="mb-4">
-    It's a great community where you can make new friends, meet people, make connections and have a good time!
-  </p>
-  <img class="community mb-4" src="./assets/images/istockphoto-1128971953-612x612.jpg" alt="Community image" />
+    <p id="reason1" class="mb-4">
+      It's a great community where you can make new friends, meet people, make connections and have a good time!
+    </p>
+    <img class="community mb-4" src="./assets/images/istockphoto-1128971953-612x612.jpg" alt="Community image" />
 
-  <p id="reason2" class="mb-4">
-    If you're interested in Discord bots or programming, this is the perfect place! Gain exposure to development, coding, and game testing.
-  </p>
-  <img class="code mb-4" src="./assets/images/photo-1515879218367-8466d910aaa4.jpeg" alt="Coding image" />
+    <p id="reason2" class="mb-4">
+      If you're interested in Discord bots or programming, this is the perfect place! Gain exposure to development, coding, and game testing.
+    </p>
+    <img class="code mb-4" src="./assets/images/photo-1515879218367-8466d910aaa4.jpeg" alt="Coding image" />
 
-  <p id="reason3" class="mb-4">
-    Enjoy a text-based adventure bot still in beta! Share your ideas and directly influence its development while having endless fun.
-  </p>
-  <img class="dragon mb-4" src="./assets/images/9290106-cartoon-of-a-knight-facing-a-fierce-dragon-isolated-on-white.jpg" alt="Dragon image" />
+    <p id="reason3" class="mb-4">
+      Enjoy a text-based adventure bot still in beta! Share your ideas and directly influence its development while having endless fun.
+    </p>
+    <img class="dragon mb-4" src="./assets/images/9290106-cartoon-of-a-knight-facing-a-fierce-dragon-isolated-on-white.jpg" alt="Dragon image" />
 
-  <button
-    class="butt3 btn btn-primary btn-lg mb-5"
-    onclick="window.location.href='https://discord.gg/mMV5rVKa';"
-  >
-    So, what are you waiting for? Join Now!!
-  </button>
-</div>
+    <button
+      class="butt3 btn btn-primary btn-lg mb-5"
+      onclick="window.location.href='https://discord.gg/mMV5rVKa';"
+    >
+      So, what are you waiting for? Join Now!!
+    </button>
+  </div>
+
+  <script>
+    document.getElementById("join-discord").addEventListener("click", function () {
+      window.location.href = "https://discord.gg/mMV5rVKa";
+    });
+  </script>
+</body>
+</html>
