@@ -1,37 +1,43 @@
 /* Typography */
-.header, #reasons {
+.custom-header {
   font-size: 3rem;
-  text-align: center;
+  font-weight: 700;
+  color: #2c3e50;
   margin: 30px auto;
 }
 
-.YOU {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-/* Images */
-.image-h2, .community, .code, .dragon {
-  max-width: 100%;
-  height: auto;
+.custom-subhead {
+  font-size: 1.75rem;
+  color: #34495e;
   margin-bottom: 20px;
 }
 
 /* Paragraphs */
-#reason1, #reason2, #reason3 {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0 auto 2rem auto;
+.custom-paragraph {
+  font-size: 1.05rem;
+  line-height: 1.7;
   max-width: 700px;
+  margin: 0 auto 2rem auto;
   text-align: center;
   padding: 0 15px;
+  color: #333;
 }
 
-/* Button styling */
+/* Images */
+.image-h2,
+.community,
+.code,
+.dragon {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Buttons */
 button {
-  margin: 20px auto;
   display: block;
+  margin: 20px auto;
 }
 
 .butt3 {
@@ -39,54 +45,47 @@ button {
   padding: 12px 25px;
 }
 
-/* Larger screens */
+#join-discord {
+  font-weight: 600;
+}
+
+/* Divider */
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  max-width: 90%;
+  margin: 60px auto;
+}
+
+/* Section container */
+#reasons-section {
+  margin-top: 60px;
+}
+
+/* Responsive adjustments for larger screens */
 @media (min-width: 768px) {
-  .header, #reasons {
+  .custom-header {
     font-size: 4rem;
   }
 
-  .YOU {
+  .custom-subhead {
     font-size: 2rem;
   }
 
-  #reason1, #reason2, #reason3 {
-    font-size: 1.1rem;
+  .custom-paragraph {
+    font-size: 1.15rem;
   }
 
   .butt3 {
     font-size: 1.3rem;
     padding: 15px 35px;
   }
-}
 
-/* Separator line between sections */
-hr {
-  border: none;
-  height: 2px;
-  background-color: #ccc;
-  margin: 60px auto;
-  max-width: 90%;
-}
-
-/* Spacing for merged layout */
-#reasons-section {
-  margin-top: 60px;
-}
-
-/* Optional Bootstrap-style spacing overrides (just in case) */
-.mb-4 {
-  margin-bottom: 1.5rem !important;
-}
-
-.mb-5 {
-  margin-bottom: 3rem !important;
-}
-
-.mt-5 {
-  margin-top: 3rem !important;
-}
-
-.my-5 {
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
+  .image-h2,
+  .community,
+  .code,
+  .dragon {
+    max-width: 80%;
+  }
 }
