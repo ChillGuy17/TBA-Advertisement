@@ -8,7 +8,7 @@ html {
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
   text-align: center;
@@ -18,7 +18,7 @@ html {
   font-size: 3rem;
   font-weight: 700;
   color: #2c3e50;
-  margin: 30px auto;
+  margin: 30px 0;
 }
 
 .custom-subhead {
@@ -29,12 +29,11 @@ html {
 }
 
 .custom-paragraph {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.75;
   max-width: 700px;
   margin: 0 auto 2rem auto;
-  text-align: center;
-  padding: 0 15px;
+  padding: 0 20px;
   color: #333;
 }
 
@@ -47,9 +46,10 @@ html {
 }
 
 .img-fluid {
-  max-width: 100%;
+  display: block;
+  max-width: 90%;
   height: auto;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   border-radius: 8px;
 }
 
