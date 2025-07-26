@@ -10,6 +10,25 @@
     html {
       scroll-behavior: smooth;
     }
+
+    .custom-header {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .custom-subhead {
+      font-style: italic;
+      color: #555;
+    }
+
+    .custom-paragraph {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .section-divider {
+      border-top: 2px solid #ccc;
+    }
   </style>
 </head>
 <body>
@@ -43,24 +62,29 @@
     <p class="custom-paragraph">
       It's a great community where you can make new friends, meet people, build connections and just have a good time!
     </p>
-    <img class="img-fluid mb-4" src="./assets/images/istockphoto-1128971953-612x612.jpg" alt="Community image" />
+    <div class="mb-4">
+      <img class="img-fluid" src="./assets/images/istockphoto-1128971953-612x612.jpg" alt="Community image" />
+    </div>
 
     <p class="custom-paragraph">
       Into programming or Discord bots? You’re in the right place. Explore development, testing, and tech with passionate peers.
     </p>
-    <img class="img-fluid mb-4" src="./assets/images/photo-1515879218367-8466d910aaa4.jpeg" alt="Coding image" />
+    <div class="mb-4">
+      <img class="img-fluid" src="./assets/images/photo-1515879218367-8466d910aaa4.jpeg" alt="Coding image" />
+    </div>
 
     <p class="custom-paragraph">
       Experience an adventurous text-based bot in beta. Play, contribute ideas, and shape its future with your feedback!
     </p>
-    <img class="img-fluid mb-4" src="./assets/images/9290106-cartoon-of-a-knight-facing-a-fierce-dragon-isolated-on-white.jpg" alt="Dragon image" />
-
-    <button
-      class="btn btn-success btn-lg mb-5"
-      onclick="window.location.href='https://discord.gg/mMV5rVKa';"
-    >
-      So, what are you waiting for? Join Now!!
-    </button>
+    <div class="mb-4 d-flex flex-column align-items-center">
+      <img class="img-fluid mb-3" src="./assets/images/9290106-cartoon-of-a-knight-facing-a-fierce-dragon-isolated-on-white.jpg" alt="Dragon image" />
+      <button
+        class="btn btn-success btn-lg"
+        onclick="window.location.href='https://discord.gg/mMV5rVKa';"
+      >
+        So, what are you waiting for? Join Now!!
+      </button>
+    </div>
   </div>
 
   <script>
