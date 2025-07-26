@@ -89,3 +89,27 @@ button {
     max-width: 80%;
   }
 }
+
+/* Other stuff */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .custom-header {
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+    .custom-subhead {
+      font-style: italic;
+      color: #555;
+    }
+
+    .custom-paragraph {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    .section-divider {
+      border-top: 2px solid #ccc;
+    }
