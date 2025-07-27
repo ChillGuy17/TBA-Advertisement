@@ -6,17 +6,24 @@ html {
   height: 100%;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  margin: 0;
+  min-height: 100vh;
+
   background-color: #000;
   background-image: url("galaxy.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  margin: 0;
+
+  color: white; /* 🧶 Makes default text white */
   position: relative;
   z-index: 1;
-  color: white; /* 🧶 Makes default text white */
 }
 
 /* Brighter overlay with higher transparency */
