@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  /* Ensures the background covers the entire viewport */
   background-color: #000;
   background-image: url("galaxy.jpg");
   background-size: cover;
@@ -17,14 +16,15 @@ body {
   margin: 0;
   position: relative;
   z-index: 1;
+  color: white; /* 🧶 Makes default text white */
 }
 
-/* Overlay to soften the background */
+/* Brighter overlay with higher transparency */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3); /* 💡 Lower opacity makes background lighter */
   z-index: -1;
 }
 
@@ -39,13 +39,13 @@ body::before {
 .custom-header {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: white;
   margin: 30px 0;
 }
 
 .custom-subhead {
   font-size: 1.75rem;
-  color: #555;
+  color: white;
   font-style: italic;
   margin-bottom: 30px;
 }
@@ -56,7 +56,7 @@ body::before {
   max-width: 700px;
   margin: 0 auto 2rem auto;
   padding: 0 20px;
-  color: #333;
+  color: white;
   opacity: 0;
   transition: opacity 0.8s ease-out;
 }
@@ -68,14 +68,14 @@ body::before {
 .section-divider {
   border: none;
   height: 2px;
-  background-color: #ccc;
+  background-color: white;
   max-width: 90%;
   margin: 60px auto;
   transition: background-color 0.3s ease;
 }
 
 .section-divider:hover {
-  background-color: #999;
+  background-color: #ccc;
 }
 
 .img-fluid {
@@ -101,7 +101,8 @@ body::before {
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .btn:hover {
@@ -110,7 +111,6 @@ body::before {
 
 .btn-primary {
   background-color: #007bff;
-  color: #fff;
 }
 
 .btn-primary:hover {
@@ -119,18 +119,16 @@ body::before {
 
 .btn-outline {
   background-color: transparent;
-  color: #007bff;
-  border: 2px solid #007bff;
+  border: 2px solid #fff;
 }
 
 .btn-outline:hover {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #fff;
+  color: #007bff;
 }
 
 .btn-success {
   background-color: #28a745;
-  color: #fff;
 }
 
 .btn-success:hover {
